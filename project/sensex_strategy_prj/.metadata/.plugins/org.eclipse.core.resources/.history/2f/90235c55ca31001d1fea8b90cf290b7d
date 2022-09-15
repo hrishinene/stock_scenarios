@@ -1,0 +1,72 @@
+package com.hvn.sensex.test;
+
+
+import java.sql.ResultSet;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.hvn.sensex.db.DBConnection;
+import com.hvn.sensex.model.Script;
+import com.hvn.sensex.model.Transaction;
+import com.hvn.sensex.process.TradeActivityCallback;
+import com.hvn.sensex.process.TradingEngine;
+import com.hvn.sensex.utils.Day;
+import com.hvn.sensex.utils.Utils;
+
+public class FirstTestCase {
+
+	@Test
+	public void test() {
+		System.out.println("This if first test programme");
+		Assert.assertTrue(true);
+	}
+
+	@Test
+	public void testDB() {
+		String query = "SELECT Company_Name, MAX(BDP_Close_double) from sensex_closing group by Company_Name";
+		try(DBConnection connection = new DBConnection()) {
+			ResultSet set = connection.executeQuery(query);
+			while (set.next()) {
+				int indx = 0;
+				String companyName = set.getString(indx++);
+				Double value = set.getDouble(indx++);
+				
+				System.out.println("Company: " + companyName + ", Max Value: " + value);
+			}
+			
+		}
+		
+	}
+	
+	
+	static class TradingActivityListener implements TradeActivityCallback {
+
+		public void onTransaction(Transaction txn) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void onDayProcessed(Day day) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void onYearlyHighLow(Script script) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+
+
+	
+	@Test
+	public void testTrading() {
+		TradingEngine engine = new TradingEngine(Utils.parseDay("2014-04-01"), Utils.parseDay("2022-04-01"));
+		
+		engine.execute(new TradingActivityListener());
+
+	}
+
+}

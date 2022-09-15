@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/Users/hrishimacair/hrishi/work/projects/mini_projects/sensex_strategy
+/.metadata/.plugins/org.eclipse.jdt.core
+3461775022.index
+1742144341.index
+3438372194.index
+363045330.index

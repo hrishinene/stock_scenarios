@@ -1,0 +1,57 @@
+package com.hvn.sensex.model;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.hvn.sensex.process.TradeActivityCallback;
+
+public class Portfolio {
+	Map<Script, TransactionIntent> intentions = new HashMap<Script, TransactionIntent>();
+	
+	double cash = 0;
+	double spend = 0;
+	List<Holding> holdings = new ArrayList<Holding>();
+	
+	
+	public Portfolio() {
+		
+	}
+	
+	List<Holding> getHoldings() {
+		return holdings;
+	}
+	
+	double getLiquidCash() {
+		return cash;
+	}
+
+	double getAmountSpent() {
+		return spend;
+	}
+	
+	double getValuation() {
+		return getValuation(holdings) + cash;
+	}
+
+	private static double getValuation(List<Holding> holdings) {
+		double value = 0;
+		for (Holding holding : holdings) {
+			value += holding.getValuation();
+		}
+		
+		return value;
+	}
+
+	public String report() {
+		return "Portfolio Report";
+	}
+
+	public void handleScriptValuation(ScriptHighLowCurrent scriptHighLow,
+			TradeActivityCallback tradingActivityListener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

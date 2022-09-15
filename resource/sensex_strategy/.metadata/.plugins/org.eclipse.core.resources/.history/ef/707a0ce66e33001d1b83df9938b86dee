@@ -1,0 +1,72 @@
+package com.hvn.sensex.test;
+
+
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.hvn.sensex.db.DBConnection;
+import com.hvn.sensex.model.Portfolio.InvestmentEvent;
+import com.hvn.sensex.model.ScriptHighLowCurrent;
+import com.hvn.sensex.process.MarketHelper;
+import com.hvn.sensex.utils.Utils;
+
+public class FirstTestCase {
+
+	@Test
+	public void test() {
+		System.out.println("This if first test programme");
+		Assert.assertTrue(true);
+	}
+
+	@Test
+	public void testDB() throws Exception {
+		String query = "SELECT Company_Name, MAX(BDP_Close_double) from sensex_closing group by Company_Name";
+		try(DBConnection connection = new DBConnection()) {
+			ResultSet set = connection.executeQuery(query);
+			while (set.next()) {
+				int indx = 1;
+				String companyName = set.getString(indx++);
+				Double value = set.getDouble(indx++);
+				
+				System.out.println("Company: " + companyName + ", Max Value: " + value);
+			}
+			
+		}
+		
+	}
+	
+	
+	@Test
+	public void testMinMaxCurrent() throws Exception {
+		List<ScriptHighLowCurrent> highLowCurrents = MarketHelper.getHighLowsCurrentList(Utils.parseDay("2021-04-05"));
+		
+		for (ScriptHighLowCurrent scriptHighLowCurrent : highLowCurrents) {
+			System.out.println(scriptHighLowCurrent);
+		}
+		
+	}
+	
+
+	@Test
+	public void testCurrent() throws Exception {
+		double tcsValue = MarketHelper.getValue("Tata Consultancy Services Ltd.",  Utils.parseDay("2021-04-03"));
+		System.out.println("TCSValue = " + tcsValue);
+		
+	}
+	
+	@Test
+	public void testCalculateIRR() {
+		List<InvestmentEvent> investments = new ArrayList<InvestmentEvent>();
+		investments.add(new InvestmentEvent(100, Utils.parseDay("2015-04-01")));
+		investments.add(new InvestmentEvent(300, Utils.parseDay("2018-04-01")));
+		investments.add(new InvestmentEvent(200, Utils.parseDay("2016-04-01")));
+		investments.add(new InvestmentEvent(300, Utils.parseDay("2014-04-01")));
+		
+		double irr = InvestmentEvent.calculateIRR(investments, Utils.parseDay("2022-04-01"), 2000, 1.1, 2.0, 0.005);
+		System.out.println("IRR = " + irr);
+	}
+}

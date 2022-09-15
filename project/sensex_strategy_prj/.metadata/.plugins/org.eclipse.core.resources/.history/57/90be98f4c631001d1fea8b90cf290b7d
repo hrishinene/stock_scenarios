@@ -1,0 +1,10 @@
+package com.hvn.sensex.utils;
+
+public class Utils {
+
+	public static Day parseDay(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

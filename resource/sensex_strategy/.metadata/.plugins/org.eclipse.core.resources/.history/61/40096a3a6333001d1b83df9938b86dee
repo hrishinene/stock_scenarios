@@ -1,0 +1,14 @@
+package com.hvn.sensex.utils;
+
+public class Constants {
+	// Technical constants
+	public static final String DBUrl = "jdbc:mysql://127.0.0.1:3306/DB_sensex";
+	public static final String Username = "admin";
+	public static final String Password = "password";
+	
+	// Business constants
+	public static final double BuyStoplossPercent = 2.0;
+	public static final double SaleStoplossPercent = 2.0;
+	public static final double amountToInvest = 100.0;
+	public static final int MinimumHoldingDays = 500;
+}

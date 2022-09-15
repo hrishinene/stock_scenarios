@@ -1,0 +1,12 @@
+package com.hvn.sensex.utils;
+
+public class Constants {
+	// Technical constants
+	public static final String DBUrl = "";
+	public static final String Username = "admin";
+	public static final String Password = "password";
+	
+	// Business constants
+	public static final double BuyStoplossPercent = 3.0;
+	public static final double SaleStoplossPercent = 3.0;
+}

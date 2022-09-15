@@ -1,0 +1,12 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.utils.Day;
+
+public class ScriptHighLow {
+	Script script;
+	double high52;
+	Day high52On;
+	double low52;
+	Day low52On;
+
+}

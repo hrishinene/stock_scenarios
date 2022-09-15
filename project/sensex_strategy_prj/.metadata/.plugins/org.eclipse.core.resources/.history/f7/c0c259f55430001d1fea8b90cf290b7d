@@ -1,0 +1,5 @@
+package com.hvn.sensex.process;
+
+public interface TradeActivityCallback {
+
+}

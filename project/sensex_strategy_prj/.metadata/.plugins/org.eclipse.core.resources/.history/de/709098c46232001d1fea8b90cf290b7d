@@ -1,0 +1,29 @@
+package com.hvn.sensex.process;
+
+import java.util.Map;
+
+import com.hvn.sensex.model.Portfolio;
+import com.hvn.sensex.model.Script;
+import com.hvn.sensex.model.ScriptHighLow;
+import com.hvn.sensex.utils.Day;
+
+public class DailyTrade {
+	Day day;
+	Portfolio portfolio;
+	
+	public DailyTrade(Portfolio portfolio, Day day) {
+		this.portfolio = portfolio;
+		this.day = day;
+	}
+	
+	void execute(TradeActivityCallback tradingActivityListener) {
+		// Get all min-max
+		Map<Script, ScriptHighLow> highlows = MarketHelper.getHighLows(day);
+		
+		// For each high low, get today's price.
+		// if buy or sale is intended - check condition and execute transaction
+		// initially single threaded. Later multi-threaded
+		
+	}
+
+}

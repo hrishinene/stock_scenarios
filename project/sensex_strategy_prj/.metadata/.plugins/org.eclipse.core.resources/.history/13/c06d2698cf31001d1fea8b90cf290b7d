@@ -1,0 +1,25 @@
+package com.hvn.sensex.process;
+
+import java.util.List;
+
+import com.hvn.sensex.model.Portfolio;
+import com.hvn.sensex.utils.Day;
+
+public class TradingEngine {
+	Day startDay, endDay;
+	Portfolio portfolio;
+
+	public TradingEngine(Portfolio portfolio, Day startDay, Day endDay) {
+		super();
+		this.portfolio = portfolio;
+		this.startDay = startDay;
+		this.endDay = endDay;
+	}
+
+	public void execute(TradeActivityCallback tradingActivityListener) {
+		List<Day> days = startDay.getDaysTill(endDay);
+		for (Day day : days) {
+			
+		}		
+	}
+}

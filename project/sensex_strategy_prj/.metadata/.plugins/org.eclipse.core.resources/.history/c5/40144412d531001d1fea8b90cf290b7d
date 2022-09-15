@@ -1,0 +1,20 @@
+package com.hvn.sensex.process;
+
+import com.hvn.sensex.model.Portfolio;
+import com.hvn.sensex.utils.Day;
+
+public class DailyTrade {
+	Day day;
+	Portfolio portfolio;
+	
+	public DailyTrade(Portfolio portfolio, Day day) {
+		this.portfolio = portfolio;
+		this.day = day;
+	}
+	
+	void execute(TradeActivityCallback tradingActivityListener) {
+		// initially single threaded. Later multi-threaded
+		
+	}
+
+}

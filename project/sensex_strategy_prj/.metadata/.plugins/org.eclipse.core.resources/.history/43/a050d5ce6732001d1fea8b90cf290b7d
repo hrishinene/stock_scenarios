@@ -1,0 +1,13 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.model.Transaction.TransactionType;
+
+public class TransactionIntent {
+	TransactionType type;
+
+	public TransactionType handleScriptValuation(ScriptHighLowCurrent scriptHighLow) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

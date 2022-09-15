@@ -1,0 +1,17 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.utils.Day;
+
+public class Holding {
+	Script script;
+	Day boughtOn;
+	
+	
+	public double getValuation() {
+		return 0.0;
+	}
+	
+	public double getIRR() {
+		return 0.0;
+	}
+}

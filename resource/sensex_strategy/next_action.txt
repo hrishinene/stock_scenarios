@@ -1,0 +1,78 @@
+
+[ 2022-09-08-12:19:58 ] Created Mini Project: sensex_strategy - sensex_strategy
+[ 2022-09-08-12:19:58 ] Next Action: Design
+
+
+===================================
+ Thu Sep  8 12:20:54 2022
+===================================
+So, now I have a database of all the sensex scripts, daily for 10 years. It's a gold mine.
+
+Here are some thoughts about how I can start breaking it down.
+
+1. This all data will go in the DB.
+2. Daily I should be able to find what is 52 week low, 52 week high etc with a DB query.
+3. Now I start with a stragegy from 1 April 2013.
+4. I have my portfolio
+    Portfolio is a list of scripts. Each bought at different valuation at different time
+    If Stock is 52 week low, I put an intention to buy (provided I don't have this script already bought within 1 year)
+    When Stock rises by X% (1%) from 52 week low, I execute a buy. I buy 1000 rupee worth of stock. Fractions is fine.
+    This will get added to my portfolio.
+
+    I keep doing buying
+
+    Also, I look for 52 week max - and make a sale if I have the stock when it falls below by 1% of 52 week peak (provided script is at least 1 year old).
+
+    Thus I will buy and sell.
+
+    At any state my portfolio summary is:
+
+    I have total invested amount = 10K
+    Total profit booked = 3.5K
+    Total amount held in stocks 8.5K
+
+    More detailed portfoloio is all my sale transactions
+    Average Sale IRR:
+    Average IRR of stocks held.
+
+    And of course, individual sale IRR and invididual Stock IRR.
+
+
+   Principle is keep booking profit and move the money into experiential world.
+   For investing borry money.
+
+
+===================================
+ Thu Sep  8 12:29:46 2022
+===================================
+Technology
+1. Core JAVA
+2. Object Orientation
+3. MySQL for database
+
+Run the program once for entire range (maybe overnight) and get a feel.
+and it may result in lukewarm 6% IRR - then we know.
+But if it's like 60%, then we know that I need to leave the job.
+
+
+Objects (Classes)
+Portfolio
+Script
+Transaction
+StopLoss
+
+----
+Commandline program
+ 
+- Configure
+- Execute
+- Report
+- Reset
+
+Execute should give prompt - 13 out of 130 - buy 12 sale 9
+
+Let's load to DB first
+set_mis_context.sh /tmp/sensex DB_sensex admin password
+
+
+

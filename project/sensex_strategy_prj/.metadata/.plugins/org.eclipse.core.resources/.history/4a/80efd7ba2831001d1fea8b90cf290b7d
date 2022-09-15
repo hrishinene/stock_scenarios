@@ -1,0 +1,9 @@
+package com.hvn.sensex.model;
+
+public class BuyTransaction extends Transaction {
+	public BuyTransaction(Script script, Day day) {}
+	
+	public Holding execute() {
+		return null;
+		}
+}

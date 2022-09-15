@@ -1,0 +1,18 @@
+package com.hvn.sensex.process;
+
+import java.util.List;
+
+import com.hvn.sensex.model.Script;
+import com.hvn.sensex.model.ScriptHighLowCurrent;
+import com.hvn.sensex.utils.Day;
+
+public class MarketHelper {
+	public static List<Script> getScripts() {
+		return null; // fetch from DB
+	}
+	
+	
+	public static List<ScriptHighLowCurrent> getHighLows(Day day) {
+		return null;
+	}
+}

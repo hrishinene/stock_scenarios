@@ -1,0 +1,11 @@
+package com.hvn.sensex.process;
+
+import com.hvn.sensex.utils.Day;
+
+public class DailyTrade {
+	Day day;
+	public DailyTrade(Day day) {
+		this.day = day;
+	}
+
+}

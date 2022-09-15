@@ -1,0 +1,12 @@
+package com.hvn.sensex.utils;
+
+import java.util.List;
+
+public class Day {
+
+	public List<Day> getDaysTill(Day endDay) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

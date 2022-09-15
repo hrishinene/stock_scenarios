@@ -1,0 +1,141 @@
+package com.hvn.sensex.model;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.hvn.sensex.model.Transaction.TransactionType;
+import com.hvn.sensex.process.TradeActivityCallback;
+import com.hvn.sensex.utils.Constants;
+import com.hvn.sensex.utils.Day;
+
+public class Portfolio {
+	Map<Script, TransactionIntent> intentions = new HashMap<Script, TransactionIntent>();
+	
+	double cash = 0;
+	double spend = 0;
+	Map<Script, Holding> holdings = new HashMap<Script, Holding>();
+	List<Transaction> transactions = new ArrayList<Transaction>();
+	
+	
+	public Portfolio() {
+		
+	}
+	
+	Map<Script, Holding> getHoldings() {
+		return holdings;
+	}
+	
+	double getLiquidCash() {
+		return cash;
+	}
+
+	double getAmountSpent() {
+		return spend;
+	}
+	
+	double getValuation(Day day) {
+		return getValuation(holdings.values(), day) + cash;
+	}
+
+	private static double getValuation(Collection<Holding> holdings, Day day) {
+		double value = 0;
+		for (Holding holding : holdings) {
+			value += holding.getValuation(day);
+		}
+		
+		return value;
+	}
+
+	public String report() {
+		return "Portfolio Report";
+	}
+
+	public void handleScriptValuation(Day today, ScriptHighLowCurrent scriptHighLow,
+			TradeActivityCallback tradingActivityListener) {
+		TransactionIntent intent = intentions.get(scriptHighLow.script);
+		if (intent != null) {
+			TransactionType txnType = intent.handleScriptValuation(scriptHighLow);
+			if (txnType.equals(TransactionType.Buy))
+				buy(today, scriptHighLow);
+			else if(txnType.equals(TransactionType.Sell))
+				sell(today, scriptHighLow);
+
+			return;
+		}
+		
+		// Set intent 
+		TransactionIntent newIntent = analyseHighLow(today, scriptHighLow);
+		if (newIntent != null)
+			intentions.put(scriptHighLow.script, newIntent);
+	}
+
+	/**
+	 * Check if today the script is at High or Low, if so, set intention
+	 * @param today
+	 * @param scriptHighLow
+	 * @return
+	 */
+	private TransactionIntent analyseHighLow(Day today, ScriptHighLowCurrent scriptHighLow) {
+		// to buy, previous holding should not exist
+		Holding holding = holdings.get(scriptHighLow.script);
+		if (holding != null && scriptHighLow.low52 == scriptHighLow.current) // do epsilon check later
+			return new TransactionIntent(scriptHighLow.script, TransactionType.Buy, scriptHighLow.current);
+		
+		// To sell, matured holding must exist
+		if (holding == null || !holding.isMatured(today))
+			return null;
+		
+		// if holding, check the price
+		if (scriptHighLow.high52 == scriptHighLow.current) // do epsilon check later
+			return new TransactionIntent(scriptHighLow.script, TransactionType.Sell, scriptHighLow.current);
+		
+		// No intent
+		return null;
+	}
+
+	/**
+	 * Actually sell the script - dissolve holding and put the cash into portfolio
+	 * Remove intent
+	 * @param today
+	 * @param scriptHighLow
+	 */
+	private void sell(Day today, ScriptHighLowCurrent scriptHighLow) {
+		Script script = scriptHighLow.script;
+		Holding holding = holdings.get(script);
+		if (holding == null) {
+			System.out.println("[WARNING] - No holding to sell - " + script);
+			return;
+		}
+		
+		System.out.println("[SALE] Script = " + script + " Value = " + holding.getValuation(scriptHighLow.current) + " IRR = " + holding.getIRR(today, scriptHighLow.current));
+		this.cash += holding.getValuation(scriptHighLow.current);
+		holdings.remove(script);
+		intentions.remove(script);
+	}
+
+	/**
+	 * Actually Buy the script, spend money, put it into Holdings and remove intent
+	 * @param today
+	 * @param scriptHighLow
+	 */
+	private void buy(Day today, ScriptHighLowCurrent scriptHighLow) {
+		Script script = scriptHighLow.script;
+
+		Holding holding = holdings.get(script);
+		if (holding != null) {
+			System.out.println("[WARNING] - Already have a holding, can't buy - " + script);
+			return;
+		}
+		
+		System.out.println("[SALE] Script = " + script + " Buy Value = " + scriptHighLow.current);
+		Holding newHolding = new Holding(script, today, scriptHighLow.current, Constants.amountToInvest);
+		holdings.put(script, newHolding);
+		
+		this.spend = Constants.amountToInvest;
+
+		intentions.remove(script);
+	}
+}

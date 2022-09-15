@@ -1,0 +1,23 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.utils.Day;
+
+public class Script {
+	String companyName;
+//	String companyCode;
+	
+	public double getValueOn(Day day) {
+		return 0.0;
+	}
+	
+	public double get52WeekMax(Day day) {
+		return 0.0;
+	}
+	
+
+	public double get52WeekMin(Day day) {
+		return 0.0;
+	}
+	
+	
+}

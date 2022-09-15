@@ -1,0 +1,34 @@
+package com.hvn.sensex.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Portfolio {
+	List<Holding> holdings = new ArrayList<Holding>();
+	double cash = 0;
+	
+	public Portfolio() {
+		
+	}
+	
+	List<Holding> getHoldings() {
+		return holdings;
+	}
+	
+	double getLiquidCash() {
+		return cash;
+	}
+	
+	double getValuation() {
+		return getValuation(holdings) + cash;
+	}
+
+	private static double getValuation(List<Holding> holdings) {
+		double value = 0;
+		for (Holding holding : holdings) {
+			value += holding.getValuation();
+		}
+		return 0;
+	}
+
+}

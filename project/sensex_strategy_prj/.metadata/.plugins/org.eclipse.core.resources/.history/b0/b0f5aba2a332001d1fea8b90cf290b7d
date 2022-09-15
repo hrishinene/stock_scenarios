@@ -1,0 +1,53 @@
+package com.hvn.sensex.process;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+import com.hvn.sensex.model.Script;
+import com.hvn.sensex.model.ScriptHighLowCurrent;
+import com.hvn.sensex.utils.Day;
+
+public class MarketHelper {
+	public static List<Script> getScripts() {
+		return null; // fetch from DB
+	}
+	
+	
+	public static Map<Script, ScriptHighLowCurrent> getHighLowsCurrentMap(Day day) {
+		Day yearBefore = day.get52WeeksBefore();
+
+		String dayQuery = "SELECT Company_Name, BDP_Close_double FROM sensex_closing WHERE BDP_Date = '"+ day.getSQLDate() +"'";
+		String yearQuery = "SELECT Company_Name ,  MIN( BDP_Close_double), MAX(BDP_Close_double) FROM sensex_closing WHERE BDP_Date between '" + yearBefore.getSQLDate() + "' and '" + day.getSQLDate() + "' group by Company_Name orderb by  Company_Name" ;;
+
+		Map<Script, ScriptHighLowCurrent> dayMap = populateDayMap(day);
+		if (dayMap == null || dayMap.isEmpty()) {
+			System.out.println("Market is closed on: " + day.getSQLDate());
+			return null;
+		}
+		
+		return populateYearlyHighLowMap(day, dayMap);
+	}
+	
+	private static Map<Script, ScriptHighLowCurrent> populateYearlyHighLowMap(Day day,
+			Map<Script, ScriptHighLowCurrent> dayMap) {
+		
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	private static Map<Script, ScriptHighLowCurrent> populateDayMap(Day day) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public static List<ScriptHighLowCurrent> getHighLows(Day day) {
+		Collection<ScriptHighLowCurrent> highLowCurrents = getHighLowsCurrentMap(day).values();
+		
+		// If market is closed, it can be null
+		return (highLowCurrents == null || highLowCurrents.isEmpty()) ? null : new ArrayList<ScriptHighLowCurrent>(getHighLowsCurrentMap(day).values());
+	}
+}

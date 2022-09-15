@@ -1,0 +1,21 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.model.Transaction.TransactionType;
+
+public class TransactionIntent {
+	TransactionType type;
+
+	Script script;
+	double stopLossValue; // based on type, sale/Buy based on this value
+	
+	/**
+	 * Based on current Intent, either adjust intent, or give sale/buy signal
+	 * @param scriptHighLow
+	 * @return
+	 */
+	public TransactionType handleScriptValuation(ScriptHighLowCurrent scriptHighLow) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

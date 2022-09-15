@@ -1,0 +1,5 @@
+package com.hvn.sensex.model;
+
+public class BuyTransaction extends Transaction {
+
+}

@@ -1,0 +1,51 @@
+package com.hvn.sensex.test;
+
+
+import org.junit.Test;
+
+import com.hvn.sensex.model.Portfolio;
+import com.hvn.sensex.model.Script;
+import com.hvn.sensex.model.Transaction;
+import com.hvn.sensex.process.TradeActivityCallback;
+import com.hvn.sensex.process.TradingEngine;
+import com.hvn.sensex.utils.Day;
+import com.hvn.sensex.utils.Utils;
+
+public class TradingTest {
+
+	
+	static class TradingActivityListener implements TradeActivityCallback {
+
+		public void onTransaction(Transaction txn) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void onDayProcessed(Day day) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void onYearlyHighLow(Script script) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+
+	
+	@Test
+	public void testTrading() {
+		Portfolio portfolio = new Portfolio();
+		Day startDay = Utils.parseDay("2015-04-01");
+//		Day startDay = Utils.parseDay("2014-04-01");
+//		Day endDay = Utils.parseDay("2017-04-01");
+		Day endDay = Utils.parseDay("2020-04-01");
+		TradingEngine engine = new TradingEngine(portfolio, startDay, endDay);
+		
+		engine.execute(new TradingActivityListener());
+		
+		System.out.println(portfolio.report(endDay));
+
+	}
+}

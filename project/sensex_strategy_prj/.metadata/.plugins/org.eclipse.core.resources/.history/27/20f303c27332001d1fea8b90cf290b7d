@@ -1,0 +1,35 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.model.Transaction.TransactionType;
+import com.hvn.sensex.utils.Constants;
+
+public class TransactionIntent {
+	TransactionType type;
+
+	Script script;
+	double stopLossValue; // based on type, sale/Buy based on this value
+	
+	public TransactionIntent(Script script, TransactionType type, double value) {
+		this.script = script;
+		this.type = type;
+		
+		stopLossValue = type.equals(TransactionType.Buy) ? adjustStopLoss(value, Constants.BuyStoplossPercent, true) : adjustStopLoss(value, Constants.SaleStoplossPercent, false);
+		// TODO Auto-generated constructor stub
+	}
+
+	private double adjustStopLoss(double value, double buystoplosspercent, boolean more) {
+		double offset = value * buystoplosspercent/100;
+		return more ? value + offset : value - offset;
+	}
+
+	/**
+	 * Based on current Intent, either adjust intent, or give sale/buy signal
+	 * @param scriptHighLow
+	 * @return
+	 */
+	public TransactionType handleScriptValuation(ScriptHighLowCurrent scriptHighLow) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

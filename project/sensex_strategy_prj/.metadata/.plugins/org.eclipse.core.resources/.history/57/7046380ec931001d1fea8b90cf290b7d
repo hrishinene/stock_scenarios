@@ -1,0 +1,12 @@
+package com.hvn.sensex.db;
+
+public class DBConnection implements AutoCloseable {
+	
+	
+
+	public void close() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

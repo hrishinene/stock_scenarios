@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.process.TradingEngine"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.process.TradeActivityCallback"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.model.Script"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.model.ScriptHighLow"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.utils.Day"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.model.Portfolio"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.process.DailyTrade"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.model.TransactionIntent"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.utils.Constants"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.model.Transaction.TransactionType"/>
+    <fullyQualifiedTypeName name="java.text.DateFormat"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.TimeZone"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.db.DBConnection"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.model.ScriptHighLowCurrent"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.process.MarketHelper"/>
+    <fullyQualifiedTypeName name="com.hvn.sensex.utils.Utils"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

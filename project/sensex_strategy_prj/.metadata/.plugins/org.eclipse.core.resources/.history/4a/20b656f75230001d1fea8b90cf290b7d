@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class FirstTestCase {
+
+	@Test
+	public void test() {
+		System.out.println("This if first test programme");
+		Assert.assertTrue(true);
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.utils.Day;
+
+public class Holding {
+	Script script;
+	Day boughtOn;
+	double numOfStocks; // can be fraction
+	double costOfStocks; // whatever constant we have set - 100 rupees
+	
+	
+	public double getValuation(Day day) {
+		return 0.0;
+	}
+	
+	public double getIRR(ScriptHighLowCurrent scriptValuation) {
+		return 0.0;
+	}
+}

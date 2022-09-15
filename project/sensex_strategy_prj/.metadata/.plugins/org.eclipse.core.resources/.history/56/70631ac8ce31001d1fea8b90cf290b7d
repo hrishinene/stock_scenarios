@@ -1,0 +1,53 @@
+package com.hvn.sensex.utils;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Day {
+	public static final long DayMiliseconds = 24 * 3600 * 1000;
+	Date date;
+	
+	public Day(String yyyy_mm_dd) {
+		Utils.parseDate(yyyy_mm_dd);
+	}
+	
+	public Day(Date dt) {
+		this.date = dt;
+	}
+	
+	Day getNextDay() {
+		return new Day(new Date(date.getTime() + DayMiliseconds));
+	}
+	
+	Day getPreviousDay() {
+		return new Day(new Date(date.getTime() - DayMiliseconds));
+	}
+	
+	boolean isAfter(Day other) {
+		return date.after(other.date);
+		
+	}
+	
+	boolean isBefore(Day other) {
+		return date.before(other.date);
+	}
+	
+	boolean isSame(Day) {
+		return date.equals(other.date);
+	}
+	
+	
+	public List<Day> getDaysTill(Day endDay) {
+		List<Day> retval = new ArrayList<Day>();
+		
+		Day day = this;
+		while (!day.isAfter(endDay)) {
+			retval.add(day);
+			day = day.getNextDay();
+		}
+
+		return retval;
+	}
+
+}

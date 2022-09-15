@@ -1,0 +1,320 @@
+Txn,Script,Date,Cash,StockPrice,Investment,IRR
+[BUY],HDFC Bank Ltd.,09/04/14,0,371,100,
+[BUY],HCL Technologies Ltd.,11/04/14,0,350,100,
+[BUY],Tech Mahindra Ltd.,11/04/14,0,434,100,
+[BUY],Infosys Ltd.,15/04/14,0,407,100,
+[BUY],ITC Ltd.,16/04/14,0,230,100,
+[BUY],Mahindra & Mahindra Ltd.,17/04/14,0,498,100,
+[BUY],Housing Development Finance Corporation Ltd.,17/04/14,0,880,100,
+[BUY],IndusInd Bank Ltd.,17/04/14,0,498,100,
+[BUY],Larsen & Toubro Ltd.,21/04/14,0,881,100,
+[BUY],Titan Company Ltd.,21/04/14,0,259,100,
+[BUY],Wipro Ltd.,28/04/14,0,198,100,
+[BUY],Asian Paints Ltd.,30/04/14,0,505,100,
+[BUY],Nestle India Ltd.,30/04/14,0,4772,100,
+[BUY],Tata Consultancy Services Ltd.,05/05/14,0,1106,100,
+[BUY],Reliance Industries Ltd.,05/05/14,0,468,100,
+[BUY],Tata Steel Ltd.,05/05/14,0,37,100,
+[BUY],Maruti Suzuki India Ltd.,06/05/14,0,1909,100,
+[BUY],NTPC Ltd.,07/05/14,0,96,100,
+[BUY],Power Grid Corporation Of India Ltd.,08/05/14,0,77,100,
+[BUY],Ultratech Cement Ltd.,09/05/14,0,2078,100,
+[BUY],Bharti Airtel Ltd.,12/05/14,0,286,100,
+[BUY],Hindustan Unilever Ltd.,12/05/14,0,570,100,
+[BUY],Sun Pharmaceutical Industries Ltd.,15/05/14,0,621,100,
+[BUY],Bajaj Finserv Ltd.,16/05/14,0,819,100,
+[BUY],Bajaj Finance Ltd.,16/05/14,0,176,100,
+[BUY],Axis Bank Ltd.,17/06/14,0,367,100,
+[BUY],ICICI Bank Ltd.,17/06/14,0,263,100,
+[BUY],Kotak Mahindra Bank Ltd.,30/06/14,0,442,100,
+[BUY],State Bank Of India,15/07/14,0,251,100,
+[SALE],Reliance Industries Ltd.,21/09/15,92,434,92,-9.73
+[SALE],HDFC Bank Ltd.,22/09/15,231,513,138,60.57
+[SALE],Housing Development Finance Corporation Ltd.,22/09/15,364,1167,132,49.99
+[SALE],IndusInd Bank Ltd.,22/09/15,541,887,177,128.25
+[SALE],Nestle India Ltd.,22/09/15,670,6140,128,42.23
+[SALE],NTPC Ltd.,22/09/15,775,100,104,6.44
+[SALE],Power Grid Corporation Of India Ltd.,22/09/15,901,98,126,37.78
+[SALE],Tech Mahindra Ltd.,23/09/15,1029,555,127,42.86
+[SALE],ITC Ltd.,28/09/15,1121,212,92,-11.09
+[SALE],Infosys Ltd.,28/09/15,1257,554,135,56.34
+[SALE],Wipro Ltd.,28/09/15,1369,222,111,17.44
+[BUY],Reliance Industries Ltd.,30/09/15,0,426,1369,
+[SALE],HCL Technologies Ltd.,01/10/15,122,428,122,34.88
+[SALE],Maruti Suzuki India Ltd.,01/10/15,362,4579,239,241.94
+[SALE],Tata Consultancy Services Ltd.,07/10/15,482,1327,119,29.55
+[SALE],Bajaj Finance Ltd.,07/10/15,772,512,290,341.45
+[SALE],Mahindra & Mahindra Ltd.,08/10/15,899,635,127,43.03
+[BUY],HCL Technologies Ltd.,08/10/15,0,414,899,
+[SALE],Larsen & Toubro Ltd.,08/10/15,115,1022,115,24.29
+[SALE],Titan Company Ltd.,08/10/15,247,341,131,49.53
+[SALE],Sun Pharmaceutical Industries Ltd.,08/10/15,394,915,147,71.89
+[SALE],Asian Paints Ltd.,09/10/15,563,853,168,113.3
+[SALE],Hindustan Unilever Ltd.,09/10/15,707,817,143,66.22
+[SALE],Bharti Airtel Ltd.,13/10/15,815,311,108,12.62
+[BUY],Maruti Suzuki India Ltd.,13/10/15,0,4275,815,
+[SALE],Tata Steel Ltd.,13/10/15,61,23,61,-50.12
+[BUY],Nestle India Ltd.,16/10/15,61,6580,100,
+[SALE],Ultratech Cement Ltd.,19/10/15,201,2903,139,62.2
+[BUY],Infosys Ltd.,19/10/15,0,556,201,
+[BUY],Hindustan Unilever Ltd.,19/10/15,0,793,100,
+[BUY],Tata Consultancy Services Ltd.,20/10/15,0,1263,100,
+[BUY],Wipro Ltd.,21/10/15,0,216,100,
+[BUY],Asian Paints Ltd.,27/10/15,0,827,100,
+[BUY],Tech Mahindra Ltd.,28/10/15,0,549,100,
+[BUY],Titan Company Ltd.,28/10/15,0,350,100,
+[SALE],Bajaj Finserv Ltd.,29/10/15,238,1956,238,254.7
+[BUY],Sun Pharmaceutical Industries Ltd.,30/10/15,0,889,238,
+[BUY],Mahindra & Mahindra Ltd.,02/11/15,0,604,100,
+[BUY],Power Grid Corporation Of India Ltd.,03/11/15,0,98,100,
+[BUY],IndusInd Bank Ltd.,06/11/15,0,921,100,
+[BUY],ITC Ltd.,09/11/15,0,228,100,
+[BUY],Larsen & Toubro Ltd.,11/11/15,0,911,100,
+[BUY],Tata Steel Ltd.,11/11/15,0,21,100,
+[BUY],Bharti Airtel Ltd.,16/11/15,0,302,100,
+[BUY],Ultratech Cement Ltd.,16/11/15,0,2731,100,
+[BUY],Housing Development Finance Corporation Ltd.,17/11/15,0,1200,100,
+[BUY],HDFC Bank Ltd.,19/11/15,0,534,100,
+[BUY],Bajaj Finserv Ltd.,19/11/15,0,1929,100,
+[SALE],Kotak Mahindra Bank Ltd.,01/12/15,155,687,155,86.89
+[SALE],State Bank Of India,02/12/15,252,244,97,-3.76
+[SALE],ICICI Bank Ltd.,02/12/15,345,245,93,-9.68
+[BUY],Kotak Mahindra Bank Ltd.,08/12/15,0,674,345,
+[BUY],NTPC Ltd.,10/12/15,0,111,100,
+[BUY],Bajaj Finance Ltd.,15/12/15,0,559,100,
+[BUY],ICICI Bank Ltd.,16/12/15,0,229,100,
+[BUY],State Bank Of India,17/12/15,0,231,100,
+[SALE],Axis Bank Ltd.,31/12/15,122,449,122,36.14
+[BUY],Axis Bank Ltd.,08/01/16,0,413,122,
+[SALE],HCL Technologies Ltd.,22/02/17,909,418,909,1.45
+[SALE],Reliance Industries Ltd.,23/02/17,2791,585,1882,56.21
+[SALE],Nestle India Ltd.,28/02/17,2886,6255,95,-6.72
+[SALE],Infosys Ltd.,07/03/17,3071,509,184,-11.32
+[SALE],Wipro Ltd.,09/03/17,3154,181,83,-21.71
+[SALE],Tata Consultancy Services Ltd.,15/03/17,3253,1250,98,-1.46
+[SALE],Hindustan Unilever Ltd.,15/03/17,3367,899,113,19.28
+[BUY],HCL Technologies Ltd.,16/03/17,0,427,3367,
+[BUY],Nestle India Ltd.,17/03/17,0,6204,100,
+[SALE],Asian Paints Ltd.,21/03/17,128,1067,128,42.74
+[SALE],Maruti Suzuki India Ltd.,21/03/17,1288,6077,1159,65.85
+[SALE],Sun Pharmaceutical Industries Ltd.,21/03/17,1476,699,187,-28.4
+[SALE],Power Grid Corporation Of India Ltd.,21/03/17,1623,144,146,70.19
+[SALE],Titan Company Ltd.,22/03/17,1750,445,127,40.08
+[SALE],IndusInd Bank Ltd.,22/03/17,1900,1376,149,73.62
+[BUY],Reliance Industries Ltd.,23/03/17,0,631,1900,
+[BUY],Power Grid Corporation Of India Ltd.,27/03/17,0,146,100,
+[BUY],Tata Consultancy Services Ltd.,29/03/17,0,1221,100,
+[BUY],Maruti Suzuki India Ltd.,31/03/17,0,6024,100,
+[SALE],Housing Development Finance Corporation Ltd.,05/04/17,124,1490,124,34.88
+[SALE],Tata Steel Ltd.,07/04/17,347,46,223,209.08
+[SALE],Larsen & Toubro Ltd.,10/04/17,469,1116,122,33.31
+[SALE],Ultratech Cement Ltd.,10/04/17,618,4058,148,74.02
+[BUY],Infosys Ltd.,11/04/17,0,483,618,
+[BUY],Wipro Ltd.,11/04/17,0,191,100,
+[BUY],Sun Pharmaceutical Industries Ltd.,12/04/17,0,682,100,
+[SALE],Bharti Airtel Ltd.,13/04/17,101,306,101,1.96
+[SALE],Bajaj Finserv Ltd.,17/04/17,334,4505,233,230.92
+[BUY],Housing Development Finance Corporation Ltd.,19/04/17,0,1489,334,
+[BUY],Asian Paints Ltd.,20/04/17,0,1058,100,
+[BUY],Bharti Airtel Ltd.,20/04/17,0,308,100,
+[BUY],Ultratech Cement Ltd.,20/04/17,0,4009,100,
+[BUY],Hindustan Unilever Ltd.,25/04/17,0,924,100,
+[SALE],ITC Ltd.,27/04/17,124,285,124,38.61
+[SALE],Mahindra & Mahindra Ltd.,28/04/17,235,667,110,15.81
+[SALE],HDFC Bank Ltd.,28/04/17,379,771,144,69.67
+[SALE],Kotak Mahindra Bank Ltd.,28/04/17,841,901,462,49.63
+[BUY],Titan Company Ltd.,02/05/17,0,485,841,
+[BUY],IndusInd Bank Ltd.,08/05/17,0,1424,100,
+[SALE],State Bank Of India,10/05/17,127,294,127,40.47
+[BUY],Tata Steel Ltd.,10/05/17,0,41,127,
+[SALE],ICICI Bank Ltd.,10/05/17,118,271,118,26.78
+[BUY],ITC Ltd.,11/05/17,0,276,118,
+[SALE],Tech Mahindra Ltd.,17/05/17,78,431,78,-31.19
+[SALE],Bajaj Finance Ltd.,17/05/17,314,1322,236,239.5
+[BUY],Mahindra & Mahindra Ltd.,23/05/17,0,664,314,
+[BUY],Tech Mahindra Ltd.,24/05/17,0,417,100,
+[BUY],Larsen & Toubro Ltd.,25/05/17,0,1179,100,
+[BUY],Bajaj Finserv Ltd.,25/05/17,0,3995,100,
+[BUY],State Bank Of India,25/05/17,0,290,100,
+[BUY],Bajaj Finance Ltd.,25/05/17,0,1260,100,
+[SALE],Axis Bank Ltd.,02/06/17,149,507,149,33.18
+[SALE],NTPC Ltd.,06/06/17,268,131,118,28.93
+[BUY],Axis Bank Ltd.,29/06/17,0,511,268,
+[BUY],Kotak Mahindra Bank Ltd.,04/07/17,0,959,100,
+[BUY],NTPC Ltd.,05/07/17,0,132,100,
+[BUY],HDFC Bank Ltd.,10/07/17,0,838,100,
+[BUY],ICICI Bank Ltd.,07/08/17,0,299,100,
+[SALE],Nestle India Ltd.,03/08/18,166,10313,166,101.7
+[SALE],Reliance Industries Ltd.,10/08/18,3757,1192,3591,141.26
+[SALE],Power Grid Corporation Of India Ltd.,10/08/18,3854,142,97,-3.56
+[SALE],HCL Technologies Ltd.,20/08/18,7754,495,3900,23.39
+[SALE],Maruti Suzuki India Ltd.,30/08/18,7907,9212,152,82.51
+[SALE],Tata Consultancy Services Ltd.,03/09/18,8076,2054,168,110.62
+[SALE],Ultratech Cement Ltd.,03/09/18,8185,4369,108,12.54
+[SALE],Bharti Airtel Ltd.,04/09/18,8295,340,110,14.38
+[SALE],Infosys Ltd.,06/09/18,9226,727,930,77.69
+[BUY],Reliance Industries Ltd.,06/09/18,0,1248,9226,
+[SALE],Housing Development Finance Corporation Ltd.,07/09/18,432,1924,432,42.64
+[BUY],Ultratech Cement Ltd.,07/09/18,0,4270,432,
+[SALE],Sun Pharmaceutical Industries Ltd.,07/09/18,97,664,97,-3.81
+[BUY],Nestle India Ltd.,07/09/18,97,10446,100,
+[BUY],Power Grid Corporation Of India Ltd.,12/09/18,97,144,100,
+[BUY],Housing Development Finance Corporation Ltd.,14/09/18,97,1926,100,
+[BUY],Maruti Suzuki India Ltd.,14/09/18,97,8632,100,
+[BUY],Tata Consultancy Services Ltd.,17/09/18,97,2071,100,
+[BUY],Infosys Ltd.,24/09/18,97,717,100,
+[SALE],Tata Steel Ltd.,24/09/18,282,60,185,67.33
+[SALE],Wipro Ltd.,24/09/18,413,249,130,47.21
+[BUY],Sun Pharmaceutical Industries Ltd.,25/09/18,0,639,413,
+[BUY],Wipro Ltd.,28/09/18,0,243,100,
+[BUY],Tata Steel Ltd.,09/10/18,0,57,100,
+[BUY],Bharti Airtel Ltd.,10/10/18,0,266,100,
+[SALE],State Bank Of India,11/10/18,90,262,90,-13.01
+[BUY],HCL Technologies Ltd.,15/10/18,90,501,100,
+[SALE],Bajaj Finance Ltd.,17/10/18,261,2151,170,111.19
+[SALE],Hindustan Unilever Ltd.,23/10/18,429,1553,168,117.59
+[BUY],State Bank Of India,29/10/18,0,268,429,
+[SALE],Tech Mahindra Ltd.,01/11/18,173,722,173,120.57
+[SALE],Titan Company Ltd.,06/11/18,1642,846,1469,132.55
+[SALE],Mahindra & Mahindra Ltd.,12/11/18,2012,780,369,26.67
+[SALE],Asian Paints Ltd.,12/11/18,2132,1275,120,33.91
+[SALE],Bajaj Finserv Ltd.,12/11/18,2271,5558,139,62.42
+[BUY],Bajaj Finance Ltd.,15/11/18,0,2339,2271,
+[SALE],Axis Bank Ltd.,16/11/18,324,618,324,29.93
+[SALE],ITC Ltd.,21/11/18,444,281,120,2.45
+[SALE],IndusInd Bank Ltd.,22/11/18,552,1529,107,11.57
+[BUY],Tech Mahindra Ltd.,28/11/18,0,698,552,
+[SALE],Kotak Mahindra Bank Ltd.,28/11/18,121,1160,121,30.74
+[SALE],Larsen & Toubro Ltd.,28/11/18,240,1403,119,30.15
+[BUY],Mahindra & Mahindra Ltd.,29/11/18,0,773,240,
+[SALE],HDFC Bank Ltd.,04/12/18,124,1044,124,36.11
+[BUY],Asian Paints Ltd.,07/12/18,0,1318,124,
+[BUY],Larsen & Toubro Ltd.,07/12/18,0,1398,100,
+[BUY],Bajaj Finserv Ltd.,07/12/18,0,5849,100,
+[BUY],ITC Ltd.,11/12/18,0,274,100,
+[BUY],Axis Bank Ltd.,11/12/18,0,604,100,
+[BUY],Titan Company Ltd.,11/12/18,0,933,100,
+[BUY],IndusInd Bank Ltd.,12/12/18,0,1582,100,
+[SALE],NTPC Ltd.,24/12/18,92,122,92,-10.86
+[BUY],Hindustan Unilever Ltd.,27/12/18,92,1811,100,
+[BUY],NTPC Ltd.,04/01/19,92,121,100,
+[SALE],ICICI Bank Ltd.,14/01/19,216,373,124,37.03
+[BUY],HDFC Bank Ltd.,17/01/19,0,1064,216,
+[BUY],Kotak Mahindra Bank Ltd.,17/01/19,0,1220,100,
+[BUY],ICICI Bank Ltd.,29/01/19,0,346,100,
+[SALE],Reliance Industries Ltd.,20/01/20,11216,1517,11216,30.75
+[SALE],Nestle India Ltd.,21/01/20,11362,15280,146,68.54
+[SALE],Ultratech Cement Ltd.,28/01/20,11829,4608,466,11.17
+[BUY],Ultratech Cement Ltd.,03/02/20,0,4370,11829,
+[BUY],Reliance Industries Ltd.,04/02/20,0,1412,100,
+[SALE],Housing Development Finance Corporation Ltd.,13/02/20,124,2403,124,36.8
+[SALE],Tata Consultancy Services Ltd.,20/02/20,228,2156,104,5.89
+[SALE],Wipro Ltd.,24/02/20,329,244,100,0.61
+[BUY],Tata Consultancy Services Ltd.,25/02/20,0,2155,329,
+[SALE],Infosys Ltd.,26/02/20,109,782,109,13.24
+[BUY],Infosys Ltd.,02/03/20,0,744,109,
+[BUY],Nestle India Ltd.,02/03/20,0,16119,100,
+[BUY],Wipro Ltd.,03/03/20,0,223,100,
+[BUY],Housing Development Finance Corporation Ltd.,04/03/20,0,2204,100,
+[SALE],Power Grid Corporation Of India Ltd.,06/03/20,98,142,98,-1.95
+[BUY],Power Grid Corporation Of India Ltd.,13/03/20,98,125,100,
+[SALE],Mahindra & Mahindra Ltd.,13/04/20,211,362,112,-64.59
+[SALE],HCL Technologies Ltd.,13/04/20,302,458,91,-12.56
+[SALE],Maruti Suzuki India Ltd.,15/04/20,361,5095,59,-56.67
+[SALE],Sun Pharmaceutical Industries Ltd.,15/04/20,651,448,289,-42.38
+[SALE],Bharti Airtel Ltd.,16/04/20,836,491,184,153.13
+[SALE],Tata Steel Ltd.,20/04/20,886,28,50,-65.36
+[BUY],Mahindra & Mahindra Ltd.,28/04/20,0,335,886,
+[SALE],Asian Paints Ltd.,28/04/20,172,1824,172,57.1
+[BUY],Bharti Airtel Ltd.,29/04/20,0,486,172,
+[SALE],Tech Mahindra Ltd.,04/05/20,397,502,397,-37.61
+[SALE],Bajaj Finserv Ltd.,04/05/20,478,4767,81,-25.03
+[SALE],Bajaj Finance Ltd.,04/05/20,2499,2080,2020,-15.82
+[BUY],Tech Mahindra Ltd.,06/05/20,0,507,2499,
+[BUY],Sun Pharmaceutical Industries Ltd.,08/05/20,0,469,100,
+[BUY],Maruti Suzuki India Ltd.,11/05/20,0,4931,100,
+[BUY],Asian Paints Ltd.,13/05/20,0,1562,100,
+[BUY],Tata Steel Ltd.,15/05/20,0,27,100,
+[BUY],HCL Technologies Ltd.,19/05/20,0,518,100,
+[BUY],Bajaj Finserv Ltd.,19/05/20,0,4540,100,
+[BUY],Bajaj Finance Ltd.,19/05/20,0,1967,100,
+[SALE],ITC Ltd.,22/05/20,67,186,67,-42.94
+[SALE],Titan Company Ltd.,29/05/20,163,890,95,-6.67
+[SALE],NTPC Ltd.,02/06/20,242,96,79,-27.39
+[SALE],HDFC Bank Ltd.,04/06/20,447,1003,204,-7.86
+[SALE],Axis Bank Ltd.,04/06/20,512,394,65,-46.88
+[SALE],Kotak Mahindra Bank Ltd.,04/06/20,622,1333,109,13.09
+[SALE],Larsen & Toubro Ltd.,04/06/20,688,931,66,-45.53
+[SALE],IndusInd Bank Ltd.,04/06/20,714,414,26,-86.2
+[SALE],Hindustan Unilever Ltd.,05/06/20,830,2087,115,22.67
+[SALE],State Bank Of India,09/06/20,1125,184,295,-45.29
+[BUY],Axis Bank Ltd.,17/06/20,0,389,1125,
+[BUY],ITC Ltd.,18/06/20,0,186,100,
+[BUY],Kotak Mahindra Bank Ltd.,18/06/20,0,1303,100,
+[BUY],Larsen & Toubro Ltd.,18/06/20,0,896,100,
+[BUY],NTPC Ltd.,18/06/20,0,92,100,
+[BUY],Hindustan Unilever Ltd.,19/06/20,0,2092,100,
+[SALE],ICICI Bank Ltd.,24/06/20,100,348,100,0.61
+[BUY],IndusInd Bank Ltd.,01/07/20,0,492,100,
+[BUY],HDFC Bank Ltd.,17/07/20,0,1099,100,
+[BUY],ICICI Bank Ltd.,04/08/20,0,351,100,
+[BUY],State Bank Of India,10/09/20,0,198,100,
+[BUY],Titan Company Ltd.,23/09/20,0,1117,100,
+[SALE],Ultratech Cement Ltd.,28/06/21,18589,6868,18589,88.28
+[SALE],Housing Development Finance Corporation Ltd.,19/07/21,18702,2482,112,17.73
+[SALE],Wipro Ltd.,20/07/21,18956,568,254,262.67
+[BUY],Housing Development Finance Corporation Ltd.,22/07/21,0,2490,18956,
+[SALE],Nestle India Ltd.,28/07/21,111,18012,111,16.89
+[SALE],Reliance Industries Ltd.,06/08/21,259,2089,147,80.17
+[SALE],Power Grid Corporation Of India Ltd.,10/08/21,396,172,136,55.9
+[BUY],Ultratech Cement Ltd.,18/08/21,0,7592,396,
+[SALE],Infosys Ltd.,24/08/21,252,1720,252,245.49
+[SALE],Tata Consultancy Services Ltd.,01/09/21,819,3714,567,128.32
+[BUY],Infosys Ltd.,03/09/21,0,1700,819,
+[BUY],Power Grid Corporation Of India Ltd.,15/09/21,0,177,100,
+[SALE],Bharti Airtel Ltd.,16/09/21,249,704,249,66.75
+[SALE],Tech Mahindra Ltd.,27/09/21,7464,1464,7215,338.64
+[SALE],Asian Paints Ltd.,28/09/21,7680,3380,216,189.53
+[SALE],Mahindra & Mahindra Ltd.,30/09/21,9801,802,2120,246.61
+[SALE],Maruti Suzuki India Ltd.,30/09/21,9950,7334,148,73.55
+[BUY],Tata Consultancy Services Ltd.,04/10/21,0,3771,9950,
+[BUY],Bharti Airtel Ltd.,04/10/21,0,681,100,
+[BUY],Tech Mahindra Ltd.,04/10/21,0,1399,100,
+[BUY],Asian Paints Ltd.,05/10/21,0,3255,100,
+[SALE],Sun Pharmaceutical Industries Ltd.,05/10/21,174,820,174,120.1
+[BUY],Wipro Ltd.,05/10/21,0,646,174,
+[BUY],Nestle India Ltd.,12/10/21,0,19414,100,
+[SALE],Bajaj Finance Ltd.,19/10/21,392,7730,392,597.46
+[SALE],Tata Steel Ltd.,19/10/21,892,136,499,899.03
+[SALE],Bajaj Finserv Ltd.,20/10/21,1302,18598,409,642.59
+[BUY],Bajaj Finance Ltd.,26/10/21,0,7849,1302,
+[BUY],Maruti Suzuki India Ltd.,27/10/21,0,7352,100,
+[BUY],Sun Pharmaceutical Industries Ltd.,01/11/21,0,811,100,
+[BUY],Mahindra & Mahindra Ltd.,04/11/21,0,872,100,
+[BUY],Bajaj Finserv Ltd.,08/11/21,0,18326,100,
+[BUY],Reliance Industries Ltd.,09/11/21,0,2520,100,
+[SALE],ITC Ltd.,16/11/21,126,235,126,38.95
+[SALE],Larsen & Toubro Ltd.,18/11/21,337,1898,211,189.89
+[BUY],Larsen & Toubro Ltd.,23/11/21,0,1888,337,
+[BUY],Tata Steel Ltd.,23/11/21,0,119,100,
+[BUY],ITC Ltd.,25/11/21,0,231,100,
+[SALE],HCL Technologies Ltd.,03/12/21,225,1171,225,251.19
+[SALE],HDFC Bank Ltd.,09/12/21,364,1527,138,58.38
+[SALE],Axis Bank Ltd.,10/12/21,2351,687,1987,132.26
+[BUY],HDFC Bank Ltd.,21/12/21,0,1442,2351,
+[SALE],Kotak Mahindra Bank Ltd.,06/01/22,145,1891,145,78.41
+[SALE],NTPC Ltd.,06/01/22,286,130,141,70.64
+[SALE],IndusInd Bank Ltd.,13/01/22,475,927,189,164.64
+[SALE],Hindustan Unilever Ltd.,14/01/22,588,2364,113,21.21
+[SALE],ICICI Bank Ltd.,19/01/22,818,808,230,238.03
+[BUY],Hindustan Unilever Ltd.,21/01/22,0,2322,818,
+[BUY],Axis Bank Ltd.,25/01/22,0,751,100,
+[BUY],Kotak Mahindra Bank Ltd.,25/01/22,0,1851,100,
+[BUY],IndusInd Bank Ltd.,25/01/22,0,882,100,
+[SALE],State Bank Of India,28/01/22,264,523,264,283.34
+[BUY],HCL Technologies Ltd.,31/01/22,0,1099,264,
+[BUY],ICICI Bank Ltd.,31/01/22,0,789,100,
+[SALE],Titan Company Ltd.,11/02/22,218,2442,218,195.68
+[BUY],State Bank Of India,15/02/22,0,524,218,
+[BUY],NTPC Ltd.,15/02/22,0,135,100,
+[BUY],Titan Company Ltd.,09/03/22,0,2432,100,

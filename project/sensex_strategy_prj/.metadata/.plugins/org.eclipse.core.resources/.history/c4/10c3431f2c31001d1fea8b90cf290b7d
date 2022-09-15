@@ -1,0 +1,21 @@
+package com.hvn.sensex.process;
+
+import com.hvn.sensex.utils.Day;
+
+public class TradingEngine {
+	Day startDay, endDay;
+
+	public TradingEngine(Day startDay, Day endDay) {
+		super();
+		this.startDay = startDay;
+		this.endDay = endDay;
+	}
+
+	public void execute(TradeActivityCallback tradingActivityListener) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

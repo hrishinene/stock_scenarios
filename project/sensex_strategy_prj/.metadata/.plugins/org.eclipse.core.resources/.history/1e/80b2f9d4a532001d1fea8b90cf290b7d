@@ -1,0 +1,18 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.utils.Day;
+
+/**
+ * This is more like a struct. Values fetched in batch from DB
+ * @author hrishimacair
+ *
+ */
+public class ScriptHighLowCurrent {
+	public Day onDay;
+	public Script script;
+	public double high52;
+	public Day high52On;
+	public double low52;
+	public Day low52On;
+	public double current;
+}

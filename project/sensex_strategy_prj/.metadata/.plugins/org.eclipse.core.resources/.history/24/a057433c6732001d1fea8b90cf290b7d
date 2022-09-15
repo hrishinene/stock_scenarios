@@ -1,0 +1,74 @@
+package com.hvn.sensex.model;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.hvn.sensex.model.Transaction.TransactionType;
+import com.hvn.sensex.process.TradeActivityCallback;
+import com.hvn.sensex.utils.Day;
+
+public class Portfolio {
+	Map<Script, TransactionIntent> intentions = new HashMap<Script, TransactionIntent>();
+	
+	double cash = 0;
+	double spend = 0;
+	List<Holding> holdings = new ArrayList<Holding>();
+	List<Transaction> transactions = new ArrayList<Transaction>();
+	
+	
+	public Portfolio() {
+		
+	}
+	
+	List<Holding> getHoldings() {
+		return holdings;
+	}
+	
+	double getLiquidCash() {
+		return cash;
+	}
+
+	double getAmountSpent() {
+		return spend;
+	}
+	
+	double getValuation() {
+		return getValuation(holdings) + cash;
+	}
+
+	private static double getValuation(List<Holding> holdings) {
+		double value = 0;
+		for (Holding holding : holdings) {
+			value += holding.getValuation();
+		}
+		
+		return value;
+	}
+
+	public String report() {
+		return "Portfolio Report";
+	}
+
+	public void handleScriptValuation(Day today, ScriptHighLowCurrent scriptHighLow,
+			TradeActivityCallback tradingActivityListener) {
+		TransactionIntent intent = intentions.get(scriptHighLow.script);
+		if (intent != null) {
+			TransactionType txnType = intent.handleScriptValuation(scriptHighLow);
+			if (txnType.equals(TransactionType.Buy))
+				buy(scriptHighLow);
+			else if(txnType.equals(TransactionType.Sell))
+				sell(scriptHighLow);
+
+			return;
+		}
+		
+		// Set intent 
+		
+		
+		// TODO Auto-generated method stub
+		
+	}
+
+}

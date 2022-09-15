@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.hvn.sensex.menu&apos; to &apos;com.hvn.sensex.prog&apos;&#x0A;- Original project: &apos;1001&apos;&#x0A;- Original element: &apos;1001/src/main/java/com.hvn.sensex.menu&apos;&#x0A;- Renamed element: &apos;1001/src/main/java/com.hvn.sensex.prog&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.hvn.sensex.menu&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hvn.sensex.menu" name="com.hvn.sensex.prog" qualified="false" references="true" stamp="1662736851590" textual="false" version="1.0"/>
+</session>

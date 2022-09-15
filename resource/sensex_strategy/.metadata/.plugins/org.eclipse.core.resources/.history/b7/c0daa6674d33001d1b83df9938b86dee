@@ -1,0 +1,37 @@
+package com.hvn.sensex.model;
+
+import com.hvn.sensex.process.MarketHelper;
+import com.hvn.sensex.utils.Constants;
+import com.hvn.sensex.utils.Day;
+
+public class Holding {
+	Script script;
+	Day boughtOn;
+	double numOfStocks; // can be fraction
+	double costOfStocks; // whatever constant we have set - 100 rupees
+	
+	
+	public double getValuation(Day day) {
+		double value = MarketHelper.getValue(script.companyName, day);
+		return getValuation(value);
+	}
+	
+	public double getValuation(double currentValue) {
+		return numOfStocks * currentValue;
+	}
+	
+	public double getIRR(Day today) {
+		double value = MarketHelper.getValue(script.companyName, today);
+		return getIRR(today, value);
+	}
+	
+	public double getIRR(Day today, double currentValue) {
+		return 0.0;
+	}
+
+	public boolean isMatured(Day onDay) {
+		if (boughtOn.getDaysDifference(onDay) > Constants.MinimumHoldingDays)
+		// TODO Auto-generated method stub
+		return false;
+	}
+}
